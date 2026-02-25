@@ -1311,6 +1311,406 @@ a.service-card {
 .footer-col-right .back-to-top:hover {
   color: var(--dark-blue);
 }
+.breadcrumb a{
+  text-decoration: underline;
+  color: var(--light-orange);
+}
+.breadcrumb{
+  margin-top: 120px;
+  font-size: 14px;
+  color: #00000073;
+  font-weight: bold;
+}
+.breadcrumb span{
+  margin: 0 4px;
+}
+.static-text li::marker {
+  color: var(--blue);
+}
+.static-text li::marker {
+  color: var(--blue);
+}
+
+/* content */
+
+/* Кнопка "Получить консультацию" в блоке НАША КОМАНДА */
+
+:is(footer, .contact_wrapper) .socialContainer {
+  border-radius: 12px;
+}
+
+/* BUTTON */
+
+/* RIGHT BLOCK */
+.second-section {
+  padding: 60px 0;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 35px 10px 35px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.Tabs_button__F1b7d:focus-visible {
+  color: #121214;
+}
+
+.Tabs_button__F1b7d:focus-visible .Tabs_wrapper__2b_4x > :first-child {
+  color: #4f4e57;
+  background-color: #dae3e3;
+}
+
+.Tabs_button__F1b7d:focus-visible .Tabs_wrapper__2b_4x > :nth-child(2) {
+  color: var(--color-green);
+  background-color: #eaedf6;
+}
+
+@supports not selector(:focus-visible) {
+}
+
+.switch:has(.circle:checked) {
+  background: var(--color-offwhite);
+}
+
+.switch:has(.circle:checked) > .sun {
+  opacity: 1;
+}
+
+.switch:has(.circle:checked) > .moon {
+  opacity: 0;
+}
+.mapboxgl-ctrl button:not(:disabled):hover {
+  background-color: rgb(0 0 0/5%);
+}
+
+.mapboxgl-ctrl-group button:focus:focus-visible {
+  box-shadow: 0 0 2px 2px #0096ff;
+}
+
+.mapboxgl-ctrl-group button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.mapboxgl-ctrl button:not(:disabled):hover {
+  background-color: rgb(0 0 0/5%);
+}
+
+.mapboxgl-ctrl-group button:focus:focus-visible {
+  box-shadow: 0 0 2px 2px #0096ff;
+}
+
+.mapboxgl-ctrl-group button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.second-section__inner {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  gap: 20px;
+}
+
+.second-section__inner .card {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 45px;
+  border-radius: var(--br);
+  padding: 40px 30px 25px 30px;
+      background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 45px;
+}
+
+.second-section__inner .card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.second-section__inner .card-title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 8px 0;
+}
+
+.second-section__inner .card-subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+.second-section__inner .card:first-child {
+  position: relative;
+}
+
+.second-section__inner .card:first-child .stars-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  transform: translate(15%, -50%);
+}
+
+.second-section__inner .card:first-child .stars-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(255, 193, 7, 0.25));
+}
+
+.second-section__inner .card:first-child .card-button-learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #31302e;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  padding: 0px 30px;
+  transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: fit-content;
+  color: #fff;
+  height: 56px;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+/* Right Card - Contact Center */
+.second-section__inner .card:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section__inner .card:last-child .contact-phone {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: rgb(120, 124, 135);
+  text-decoration: none;
+  margin: 12px 0 8px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.second-section__inner .card:last-child .contact-social {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+.second-section__inner .card:last-child .contact-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #31302e;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.second-section__inner .card:last-child .contact-social-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+.second-section__inner .card:last-child .contact-social-link:hover svg path {
+  fill: #fff;
+}
+
+.second-section__inner .card:first-child .card-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.second-section__inner .card:first-child .card-content div {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-styles ul li::marker {
+  color: #92b33d;
+}
+
+.page-catalog2-main-list-item-ava-list:focus-visible {
+  outline: none;
+}
+
+.quote-form-submit:hover:not(:disabled) svg {
+  transform: translateX(4px);
+}
+
+.mapboxgl-ctrl button:not(:disabled):hover {
+  background-color: rgb(0 0 0/5%);
+}
+
+.mapboxgl-ctrl-group button:focus:focus-visible {
+  box-shadow: 0 0 2px 2px #0096ff;
+}
+
+.mapboxgl-ctrl-group button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.phone-input:has(input:focus) {
+  border-color: #006525;
+}
+.contact-map-wrapper{
+  display: grid;
+  grid-template-columns: .6fr 1fr;
+  gap: 30px;
+}
+.contact-map-left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-map-left a{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+.contact-map-left span{
+  opacity: .7;
+  font-size: 16px;
+  font-weight: normal;
+
+}
+.contact-map-left p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  opacity: .7;
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
+.map {
+  border-radius: var(--br);
+  overflow: hidden;
+}
+#map {
+  border-radius: 24px;
+}
+/* FIXED SVG SIZE */
+/* Dark overlay */
+@media (max-width: 1200px) {
+  .card-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .second-section__inner {
+    grid-template-columns: 1fr;
+  }
+  .card-content {
+    padding: 25px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .second-section__inner .card:first-child .stars-wrapper {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    transform: none;
+    top: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-section__inner .card:first-child .card-content {
+    grid-template-columns: 1fr;
+  }
+  .second-section__inner {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 16px;
+  }
+
+  .second-section__inner .card {
+    min-height: 320px;
+    padding: 30px 24px;
+  }
+  .second-section__inner .card-title {
+    font-size: 24px !important;
+    line-height: 30px;
+  }
+
+  .second-section__inner .card:last-child .contact-phone {
+    font-size: 25px !important;
+    line-height: 36px;
+  }
+
+  .second-section {
+    padding-top: 0;
+  }
+
+  .second-section__inner .card {
+    padding: 0 !important;
+  }
+
+  .second-section__inner .card-title {
+    font-size: 20px !important;
+    line-height: 26px;
+  }
+
+  .second-section__inner .card:last-child .contact-social-link {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .second-section__inner .card:last-child .contact-social {
+    margin-top: 0;
+  }
+}
 
 /* Responsive */
 
