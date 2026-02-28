@@ -1502,16 +1502,19 @@ a.service-card {
   line-height: 24px;
   font-weight: 600;
   border-radius: 8px;
-  border: none;
+  border: 3px solid #31302e;
   padding: 0px 30px;
-  transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all  0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: fit-content;
   color: #fff;
   height: 56px;
   text-decoration: none;
   margin-top: auto;
 }
-
+.second-section__inner .card:first-child .card-button-learn:hover{
+  color: #31302e;
+  background-color: #fff;
+}
 /* Right Card - Contact Center */
 .second-section__inner .card:last-child {
   display: flex;
@@ -1545,6 +1548,10 @@ a.service-card {
   background-color: #31302e;
   transition: all 0.3s;
   text-decoration: none;
+  border: 3px solid #31302e
+}
+.second-section__inner .card:last-child .contact-social-link:hover{
+  background-color: #fff;
 }
 
 .second-section__inner .card:last-child .contact-social-link svg {
@@ -1553,7 +1560,7 @@ a.service-card {
 }
 
 .second-section__inner .card:last-child .contact-social-link:hover svg path {
-  fill: #fff;
+  fill: #31302e;
 }
 
 .second-section__inner .card:first-child .card-content {
