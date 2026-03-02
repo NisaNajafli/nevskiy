@@ -43,3 +43,30 @@ if (backToTopBtn) {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 }
+
+const toggle = document.querySelector('.mobile-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const dropdowns = document.querySelectorAll('.mobile-has-dropdown');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+  });
+
+  // Close on overlay click
+  mobileMenu.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) {
+      toggle.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    }
+  });
+
+  // Dropdown toggle
+  dropdowns.forEach(item => {
+    item.querySelector('.mobile-dropdown-toggle')
+      .addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+  });
